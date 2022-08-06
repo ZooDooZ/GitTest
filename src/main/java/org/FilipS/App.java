@@ -1,11 +1,33 @@
 package org.FilipS;
 
-/**
- * Hello world!
- *
- */
+import java.util.Scanner;
+
 public class App {
     public static void main( String[] args ) {
-        System.out.println( "Hello World!" );
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Wpisz pierwsza liczbe:");
+        double a = scanner.nextDouble();
+        System.out.println("Wpisz druga liczbe:");
+        double b = scanner.nextDouble();
+        scanner.nextLine();
+        System.out.println("Wpisz kalkulacje(znak) jaka chcesz zrobic na tych liczbach:");
+        String str = scanner.nextLine();
+
+        if (str.equals("+")){
+            System.out.println(a + " + " + b + " = " + (a + b));
+        } else if(str.equals("-")){
+            System.out.println(a + " - " + b + " = " + (a - b));
+        } else if(str.equals("*")){
+            System.out.println(a + " * " + b + " = " + (a * b));
+        } else if(str.equals("/")){
+            if(b == 0){
+                System.out.println("Incorect value! You can't division by 0");
+            } else {
+                System.out.println(a + " / " + b + " = " + (a / b));
+            }
+        } else if(str.equals("^")){
+            System.out.println(a + " ^ " + b + " = " + (Math.pow(a,b)));
+        }
     }
 }
