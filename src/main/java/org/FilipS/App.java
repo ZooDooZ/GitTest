@@ -29,5 +29,6 @@ public class App {
         } else if(str.equals("^")){
             System.out.println(a + " ^ " + b + " = " + (Math.pow(a,b)));
         }
+        
     }
 }
