@@ -6,12 +6,12 @@ public class App {
     public static void main( String[] args ) {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Wpisz pierwsza liczbe:");
+        System.out.println("Eneter first number:");
         double a = scanner.nextDouble();
-        System.out.println("Wpisz druga liczbe:");
+        System.out.println("Eneter second number:");
         double b = scanner.nextDouble();
         scanner.nextLine();
-        System.out.println("Wpisz kalkulacje(znak) jaka chcesz zrobic na tych liczbach:");
+        System.out.println("Eneter calculation sign(+,-,*,/,^) witch you want to do:");
         String str = scanner.nextLine();
 
         if (str.equals("+")){
@@ -28,6 +28,8 @@ public class App {
             }
         } else if(str.equals("^")){
             System.out.println(a + " ^ " + b + " = " + (Math.pow(a,b)));
+        } else {
+            System.out.println("Incorect value!");
         }
         
     }
