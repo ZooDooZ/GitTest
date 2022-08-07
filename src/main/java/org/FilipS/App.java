@@ -6,10 +6,13 @@ public class App {
     public static void main( String[] args ) {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Eneter first number:");
+
+        System.out.println("Enter first number:");
         double a = scanner.nextDouble();
-        System.out.println("Eneter second number:");
+
+        System.out.println("Enter second number:");
         double b = scanner.nextDouble();
+
         scanner.nextLine();
         System.out.println("Eneter calculation sign(+,-,*,/,^) witch you want to do:");
         String str = scanner.nextLine();
