@@ -1,0 +1,25 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: Prawda
+  is_correct: false
+- text: Fałsz
+  is_correct: true
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public class Main {
+        public static void main(String[] args) {
+
+        }
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Mon, 15 Aug 2022 07:59:57 UTC
+record: -1
+selected_options:
+- 1
+local_check: true

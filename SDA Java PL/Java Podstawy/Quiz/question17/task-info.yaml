@@ -1,0 +1,35 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: Zastąpić System.out.println przez System.out.printf w linijce 4.
+  is_correct: false
+- text: Usunąć słowo static z linijki 2.
+  is_correct: false
+- text: Zamienić i++ na ++i w linijce 3.
+  is_correct: false
+- text: Umieścić linijkę 4 w nawiasach klamrowych.
+  is_correct: false
+- text: Zastąpić System.out.println przez System.out.print w linijce 4.
+  is_correct: false
+- text: Dopisać int przed i = 0 w linijce 3.
+  is_correct: true
+- text: Dopisać średnik na końcu linijki 3.
+  is_correct: false
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public class Main {
+        public static void main(String[] args) {
+
+        }
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Mon, 15 Aug 2022 08:07:52 UTC
+record: -1
+selected_options:
+- 5
+local_check: true

@@ -1,0 +1,37 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: 2, 4 i 8
+  is_correct: false
+- text: 4 i 5
+  is_correct: false
+- text: 2
+  is_correct: false
+- text: 2 i 8
+  is_correct: true
+- text: 4 i 8
+  is_correct: false
+- text: 8
+  is_correct: false
+- text: Wszystkie odpowiedzi są poprawne.
+  is_correct: false
+- text: Żadna odpowiedź nie jest poprawna.
+  is_correct: false
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public class Main {
+        public static void main(String[] args) {
+
+        }
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Mon, 15 Aug 2022 08:06:35 UTC
+record: -1
+selected_options:
+- 3
+local_check: true
