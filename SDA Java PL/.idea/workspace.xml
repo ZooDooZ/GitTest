@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="565ea3a3-0372-448a-863b-9c7ea7f1d764" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Quiz/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Quiz/question01/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Quiz/question02/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Quiz/question03/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Quiz/question04/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Quiz/question05/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Quiz/question06/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Quiz/question07/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Quiz/question08/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Quiz/question09/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Quiz/question10/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Quiz/question11/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Quiz/question12/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Quiz/question13/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Quiz/question14/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Quiz/question15/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Quiz/question16/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Quiz/question17/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Quiz/question18/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Quiz/question19/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Quiz/question20/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Quiz/question21/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Quiz/question22/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Quiz/question23/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Quiz/question24/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Wprowadzenie/Pierwsze zadanie/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Wprowadzenie/Pierwszy quiz/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Wprowadzenie/Witaj świecie/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Wprowadzenie/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Zadania/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Zadania/task01/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Zadania/task02/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Zadania/task03/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Zadania/task04/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Zadania/task05/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Zadania/task06/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Zadania/task07/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Zadania/task08/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Zadania/task09/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Zadania/task10/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Zadania/task11/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Zadania/task12/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Zadania/task13/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Zadania/task14/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Zadania/task15/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Zadania/task16/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Zadania/task17/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Zadania/task18/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Zadania/task19/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/Zadania/task20/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java Podstawy/section-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java podstawy - programowanie/Zadania/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java podstawy - programowanie/Zadania/task01/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java podstawy - programowanie/Zadania/task02/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java podstawy - programowanie/Zadania/task03/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java podstawy - programowanie/Zadania/task04/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java podstawy - programowanie/Zadania/task05/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java podstawy - programowanie/Zadania/task06/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java podstawy - programowanie/Zadania/task07/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java podstawy - programowanie/Zadania/task08/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java podstawy - programowanie/Zadania/task09/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java podstawy - programowanie/Zadania/task10/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java podstawy - programowanie/Zadania/task11/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java podstawy - programowanie/Zadania/task12/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java podstawy - programowanie/Zadania/task13/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java podstawy - programowanie/Zadania/task14/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java podstawy - programowanie/Zadania/task15/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java podstawy - programowanie/Zadania/task16/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java podstawy - programowanie/Zadania/task17/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java podstawy - programowanie/Zadania/task18/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java podstawy - programowanie/Zadania/task19/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java podstawy - programowanie/Zadania/task20/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java podstawy - programowanie/section-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/org/FilipS/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/org/FilipS/App.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2DNqsQWSOOXIKAZvCx2ciKtpBrX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Edu.IsLocalCourse&quot;: &quot;true&quot;,
+    &quot;Edu.Yaml.Migrate&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/piotf/Documents/KursJava/KursJavaSDA/Repozytorium/GitTest&quot;,
+    &quot;show.inlinked.gradle.project.popup&quot;: &quot;false&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Task" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Task" />
+      <module name="SDA_Java_PL.Java_Podstawy-Zadania-task03.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Task" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="565ea3a3-0372-448a-863b-9c7ea7f1d764" name="Changes" comment="" />
+      <created>1660550098968</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660550098968</updated>
+      <workItem from="1660550103704" duration="1718000" />
+      <workItem from="1660551850788" duration="23000" />
+      <workItem from="1660596538952" duration="3692000" />
+      <workItem from="1660633883671" duration="1471000" />
+      <workItem from="1660662865115" duration="8535000" />
+      <workItem from="1660673274686" duration="78000" />
+      <workItem from="1660731367874" duration="21000" />
+      <workItem from="1660739071425" duration="600000" />
+      <workItem from="1660891450477" duration="5264000" />
+      <workItem from="1660905233476" duration="2305000" />
+      <workItem from="1660982113291" duration="2299000" />
+      <workItem from="1661014668218" duration="1460000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
