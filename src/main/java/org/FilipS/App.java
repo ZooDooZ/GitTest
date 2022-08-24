@@ -4,10 +4,10 @@ package org.FilipS;
 public class App {
     public static void main( String[] args ) {
 
-        Person person1 = new Person("Filip", "Sokołowski", "male", 32, 90061803937L);
-        Person person2 = new Person("Jozef", "Sokołowski", "male", 67, 56020811223L);
-        Person person3 = new Person("Beata", "Sokołowska", "female", 70, 53062711223L);
-        Person person4 = new Person("Amelia", "Sokołowski", "female", 36, 86022011223L);
+        Person person1 = new Person("Filip", "Sokołowski", "male", 32, 80061803937L);
+        Person person2 = new Person("Jozef", "Sokołowski", "male", 67, 5000811223L);
+        Person person3 = new Person("Beata", "Sokołowska", "female", 70, 60062711223L);
+        Person person4 = new Person("Amelia", "Sokołowski", "female", 36, 89022011223L);
 
         Person[] array = {person1, person2, person3, person4};
 
