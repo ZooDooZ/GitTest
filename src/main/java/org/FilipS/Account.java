@@ -53,4 +53,8 @@ public class Account {
         other.deposit(amount);
     }
 
+    public String toString(){
+        return "Account name: " + name + ", balance: " + balance;
+    }
+
 }
