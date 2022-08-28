@@ -37,7 +37,6 @@ public class App {
         }while(n < 0);
         return n;
     }
-
     public static double getNumberDouble(String str){
         Scanner scannerTwo = new Scanner(System.in);
         System.out.println("Enter " + str + " number: ");
