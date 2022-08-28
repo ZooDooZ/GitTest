@@ -29,9 +29,12 @@ public class App {
     }
 
     public static int getNumberInteger() {
+        int n = 0;
         Scanner scannerOne = new Scanner(System.in);
-        System.out.println("Enter number: ");
-        int n = scannerOne.nextInt();
+        do {
+            System.out.println("Enter number: ");
+            n = scannerOne.nextInt();
+        }while(n < 0);
         return n;
     }
 
