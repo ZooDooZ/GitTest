@@ -47,12 +47,10 @@ public class App {
 
 
     public static void main( String[] args ) {
-        
         String gameLevel = getGameLevel();
         int life = getLife(gameLevel);
         int[] digitsFromComputer = getDigitsFromComputer();
         repeatGameWhileHaveLife(life,digitsFromComputer);
-
     }
 
     public static String getGameLevel(){
