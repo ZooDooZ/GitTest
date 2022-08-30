@@ -1,7 +1,5 @@
 package org.FilipS;
 
-
-
 import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -36,21 +34,24 @@ public class App {
     //X 4. Validate the digits
 
     //LOGIC LAYER
-    //5. Computer draw random digits
-    //6. Check random digits are different
-    //7. Check the digits from user and from computer are the same
-    //8. Selected message based on user digits
+    //X 5. Computer draw random digits
+    //X 6. Check random digits are different
+    //X 7. Check the digits from user and from computer are the same
+    //X 8. Selected message based on user digits
+    //X 9. If player has a life he guesses again
 
     //OUTPUT LAYER
-    //8. Print answer (correct message)
-    //9. Print result if user win or lose
-    //10. End program
+    //X 10. Print answer (correct message)
+    //X 11. Print result if user win or lose
+    //X 12. End program
 
 
     public static void main( String[] args ) {
+        
         String gameLevel = getGameLevel();
         int life = getLife(gameLevel);
-        int[] digitsFromUser = getDigitFromUser();
+        int[] digitsFromComputer = getDigitsFromComputer();
+        repeatGameWhileHaveLife(life,digitsFromComputer);
 
     }
 
@@ -92,14 +93,74 @@ public class App {
     }
 
     public static int[] getDigitsFromComputer(){
-        int firstDigitFromComputer = ThreadLocalRandom.current().nextInt(10);
-        int secondDigitFromComputer = ThreadLocalRandom.current().nextInt(10);
-        int thirdDigitFromComputer = ThreadLocalRandom.current().nextInt(10);
+        int[] digitsFromComputer = new int[3];
+        for(int i = 0 ; i < digitsFromComputer.length; i++){
+            digitsFromComputer[i] = ThreadLocalRandom.current().nextInt(10);
+        }
 
-        while (firstDigitFromComputer == secondDigitFromComputer || firstDigitFromComputer == thirdDigitFromComputer || secondDigitFromComputer == thirdDigitFromComputer) {
-            firstDigitFromComputer = ThreadLocalRandom.current().nextInt(10);
-            secondDigitFromComputer = ThreadLocalRandom.current().nextInt(10);
-            thirdDigitFromComputer = ThreadLocalRandom.current().nextInt(10);
+        while (digitsFromComputer[0] == digitsFromComputer[1] || digitsFromComputer[0] == digitsFromComputer[2] ||
+                digitsFromComputer[1] == digitsFromComputer[2]) {
+
+            digitsFromComputer[0] = ThreadLocalRandom.current().nextInt(10);
+            digitsFromComputer[1] = ThreadLocalRandom.current().nextInt(10);
+            digitsFromComputer[2] = ThreadLocalRandom.current().nextInt(10);
+        }
+
+        return digitsFromComputer;
+    }
+
+    public static String comparingDigitsFromUserAndComputer(int[] userArray, int[] computerArray){
+        String message = "";
+
+        if (userArray[0] == computerArray[0]) {
+            message += " HOT";
+        } else if (userArray[0] == computerArray[1] || userArray[0] == computerArray[2]) {
+            message += " WARM";
+        } else {
+            message += " COLD";
+        }
+
+        if (userArray[1] == computerArray[1]) {
+            message += " HOT";
+        } else if (userArray[1] == computerArray[0] || userArray[1] == computerArray[2]) {
+            message += " WARM";
+        } else {
+            message += " COLD";
+        }
+
+        if (userArray[2] == computerArray[2]) {
+            message += " HOT";
+        } else if (userArray[2] == computerArray[0] || userArray[2] == computerArray[1]) {
+            message += " WARM";
+        } else {
+            message += " COLD";
+        }
+
+        return message.trim();
+    }
+
+    public static void printResultMessage(String message, int life){
+        if(message.equals("HOT HOT HOT")){
+            System.out.println("Your result: " + message);
+            System.out.println("Congratulation! You WIN!");
+            System.exit(0);
+        } else if (life > 0 ){
+            System.out.println("Your result: " + message);
+            System.out.println("Your lifes: " + life);
+            System.out.println("Try again!");
+        } else if (life == 0) {
+            System.out.println("Your result: " + message);
+            System.out.println("Your lifes: " + life);
+            System.out.println("Game Over!");
+            System.exit(0);
         }
     }
+
+    public static void repeatGameWhileHaveLife(int life, int[]computerArray){
+        for(int i = 1; i <= life; i++){
+            String message = comparingDigitsFromUserAndComputer(getDigitFromUser() ,computerArray);
+            printResultMessage(message, life-i);
+        }
+    }
+
 }
