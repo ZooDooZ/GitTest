@@ -1,7 +1,6 @@
 package org.FilipS;
 
-import java.util.Scanner;
-import java.util.concurrent.ThreadLocalRandom;
+import java.util.*;
 
 public class App {
     /*
@@ -27,9 +26,9 @@ public class App {
      */
 
     //INPUT LAYER
-    //0. Start the program
+    //X 0. Start the program
     //X 1. Ask the user about game level [easy, medium, hard]
-    //X 2. Validate game level
+    //X 2. Set game level
     //X 3. Ask the user about digit
     //X 4. Validate the digits
 
@@ -38,7 +37,7 @@ public class App {
     //X 6. Check random digits are different
     //X 7. Check the digits from user and from computer are the same
     //X 8. Selected message based on user digits
-    //X 9. If player has a life he guesses again
+    //X 9. If player has a life(5) he guesses again
 
     //OUTPUT LAYER
     //X 10. Print answer (correct message)
@@ -47,118 +46,120 @@ public class App {
 
 
     public static void main( String[] args ) {
-        String gameLevel = getGameLevel();
-        int life = getLife(gameLevel);
-        int[] digitsFromComputer = getDigitsFromComputer();
-        repeatGameWhileHaveLife(life,digitsFromComputer);
+        int life = getLife(5);
+        int gameLevel = getGameLevel();
+        int numberOfDigits = getNumberOfDigits(gameLevel);
+        Integer[] digitsFromComputer = getDigitsFromComputer(numberOfDigits);
+        turnsOfTheGame(life, digitsFromComputer, numberOfDigits);
     }
 
-    public static String getGameLevel(){
+    // Ask the user about game level [easy, medium, hard]
+    public static Integer getGameLevel(){
         Scanner scanner = new Scanner(System.in);
-        String s = "";
-        do {
-            System.out.println("Choose game level (easy/medium/hard:");
-            s = scanner.nextLine();
-        } while(!s.equalsIgnoreCase("easy") && !s.equalsIgnoreCase("medium") && !s.equalsIgnoreCase("hard"));
+        List<Integer> gameLevels = new ArrayList<>(List.of((new Integer[]{1,2,3})));
+        int level = 0;
 
-        return s;
+        while (!gameLevels.contains(level)){
+            System.out.println("Choose number of game level (1 = easy/2 = medium/3 = hard):");
+            level = scanner.nextInt();
+        }
+        return level;
     }
 
-    public static int getLife(String gameLevel){
-        int life = 0;
-            if (gameLevel.equalsIgnoreCase("easy")){
-                life = 8;
-            } else if (gameLevel.equalsIgnoreCase("medium")) {
-                life = 5;
-            } else {
-                life = 3;
-            }
-        return life;
+    // Set game level
+    public static Integer getNumberOfDigits(Integer level){
+        switch (level) {
+            case 1:
+                return 3;
+            case 2:
+                return 4;
+            default:
+                return 5;
+        }
     }
+    // Ask the user about digit and validate digits
+    public static Integer[] getDigitsFromUser(int numberOfDigits){
 
-    public static int[] getDigitFromUser(){
-        Scanner scanner = new Scanner(System.in);
-        int[] digitsFromUser = new int[3];
+        Scanner scanner =  new Scanner(System.in);
+        Integer[] digitsFromUser = new Integer[numberOfDigits];
+        String[] numbersFromUser;
+        String numbers = " ";
 
+        while (numbers.length() != numberOfDigits ){
+            System.out.println("Enter your " + numberOfDigits + " numbers with space [e.g. 1 2 3 or 4 6 5 9 0]:");
+            numbers = scanner.nextLine().replaceAll("\\s","");
+        }
+        numbersFromUser = (numbers.split(""));
         for(int i = 0; i < digitsFromUser.length; i++){
-            digitsFromUser[i] = -2;
-            while(digitsFromUser[i] < 0 || digitsFromUser[i] > 9) {
-                System.out.println("Enter your " + (i + 1) + " number:");
-                digitsFromUser[i] = scanner.nextInt();
-            }
+            digitsFromUser[i] = Integer.parseInt(numbersFromUser[i]);
         }
         return digitsFromUser;
     }
+    // Computer draw random digits and check random digits are different
+    public static Integer[] getDigitsFromComputer(int numberOfDigits){
+        Random random = new Random();
+        Map<Integer, Integer> setDigitsFromComputer = new HashMap<>();
 
-    public static int[] getDigitsFromComputer(){
-        int[] digitsFromComputer = new int[3];
-        for(int i = 0 ; i < digitsFromComputer.length; i++){
-            digitsFromComputer[i] = ThreadLocalRandom.current().nextInt(10);
+        while(setDigitsFromComputer.size() != numberOfDigits){
+            for (int i = 0; i < numberOfDigits; i++) {
+                setDigitsFromComputer.put(random.nextInt(10), i);
+            }
         }
-
-        while (digitsFromComputer[0] == digitsFromComputer[1] || digitsFromComputer[0] == digitsFromComputer[2] ||
-                digitsFromComputer[1] == digitsFromComputer[2]) {
-
-            digitsFromComputer[0] = ThreadLocalRandom.current().nextInt(10);
-            digitsFromComputer[1] = ThreadLocalRandom.current().nextInt(10);
-            digitsFromComputer[2] = ThreadLocalRandom.current().nextInt(10);
-        }
-
-        return digitsFromComputer;
+            return setDigitsFromComputer.keySet().toArray(new Integer[0]);
     }
 
-    public static String comparingDigitsFromUserAndComputer(int[] userArray, int[] computerArray){
+    // Check the digits from user and from computer are the same
+    public static String messageDigitsUserAndCompTheSame(Integer[] digitsUser, Integer[] digitsComp) {
         String message = "";
+        List<Integer> arrayListDigitComp = Arrays.asList(digitsComp);
 
-        if (userArray[0] == computerArray[0]) {
-            message += " HOT";
-        } else if (userArray[0] == computerArray[1] || userArray[0] == computerArray[2]) {
-            message += " WARM";
-        } else {
-            message += " COLD";
+        for (int i = 0; i < digitsUser.length; i++) {
+            if (digitsUser[i].equals(digitsComp[i])) {
+                message += (" HOT");
+            }else if(arrayListDigitComp.contains(digitsUser[i])){
+                message += (" WARM");
+            }else {
+                message += (" COLD");
+
+            }
         }
-
-        if (userArray[1] == computerArray[1]) {
-            message += " HOT";
-        } else if (userArray[1] == computerArray[0] || userArray[1] == computerArray[2]) {
-            message += " WARM";
-        } else {
-            message += " COLD";
-        }
-
-        if (userArray[2] == computerArray[2]) {
-            message += " HOT";
-        } else if (userArray[2] == computerArray[0] || userArray[2] == computerArray[1]) {
-            message += " WARM";
-        } else {
-            message += " COLD";
-        }
-
         return message.trim();
     }
 
-    public static void printResultMessage(String message, int life){
-        if(message.equals("HOT HOT HOT")){
-            System.out.println("Your result: " + message);
-            System.out.println("Congratulation! You WIN!");
+    // Selected message based on user digits and print results
+    public static void printGameStatus(String message, int life){
+
+        if(message.equalsIgnoreCase("HOT HOT HOT")){
+            System.out.println("***" + message + "***");
+            System.out.println("Congratulations you win this game!");
             System.exit(0);
-        } else if (life > 0 ){
-            System.out.println("Your result: " + message);
-            System.out.println("Your lifes: " + life);
-            System.out.println("Try again!");
-        } else if (life == 0) {
-            System.out.println("Your result: " + message);
-            System.out.println("Your lifes: " + life);
-            System.out.println("Game Over!");
-            System.exit(0);
+
+        } else {
+            if(life > 0){
+                System.out.println("***" + message + "***");
+                System.out.println("You missed, try again!");
+                System.out.println("Your lifes = " + life);
+
+            } else {
+                System.out.println("***" + message + "***");
+                System.out.println("Your lifes = " + life);
+                System.out.println("GAME OVER!");
+                System.exit(0);
+            }
         }
     }
 
-    public static void repeatGameWhileHaveLife(int life, int[]computerArray){
-        for(int i = 1; i <= life; i++){
-            String message = comparingDigitsFromUserAndComputer(getDigitFromUser() ,computerArray);
-            printResultMessage(message, life-i);
+    // If player has a life(5) he guesses again
+    public static void turnsOfTheGame(int life, Integer[] digitsFromComputer,int numberOfDigits){
+
+        for (int i = 0; i < life; i++){
+            Integer[] digitsFromUser = getDigitsFromUser(numberOfDigits);
+            String message = messageDigitsUserAndCompTheSame(digitsFromUser, digitsFromComputer);
+            printGameStatus(message, life-(i+1));
+            System.out.println();
         }
     }
-
+    public static int getLife(int life){
+        return life;
+    }
 }
