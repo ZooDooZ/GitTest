@@ -98,14 +98,14 @@ public class App {
     // Computer draw random digits and check random digits are different
     public static Integer[] getDigitsFromComputer(int numberOfDigits){
         Random random = new Random();
-        Map<Integer, Integer> mapDigitsFromComputer = new HashMap<>();
+        Set<Integer> mapDigitsFromComputer = new LinkedHashSet<>();
 
         while(mapDigitsFromComputer.size() != numberOfDigits){
             for (int i = 0; i < numberOfDigits; i++) {
-                mapDigitsFromComputer.put(random.nextInt(10), i);
+                mapDigitsFromComputer.add(random.nextInt(10));
             }
         }
-            return mapDigitsFromComputer.keySet().toArray(new Integer[0]);
+            return mapDigitsFromComputer.toArray(new Integer[0]);
     }
 
     // Check the digits from user and from computer are the same
