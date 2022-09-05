@@ -86,7 +86,7 @@ public class App {
         String numbers = " ";
 
         while (numbers.length() != numberOfDigits ){
-            System.out.println("Enter your " + numberOfDigits + " numbers with space [e.g. 1 2 3 or 4 6 5 9 0]:");
+            System.out.println("Enter your " + numberOfDigits + " numbers with space [e.g. 6 2 4 or 4 6 5 9 0]:");
             numbers = scanner.nextLine().replaceAll("\\s","");
         }
         numbersFromUser = (numbers.split(""));
@@ -98,14 +98,14 @@ public class App {
     // Computer draw random digits and check random digits are different
     public static Integer[] getDigitsFromComputer(int numberOfDigits){
         Random random = new Random();
-        Map<Integer, Integer> setDigitsFromComputer = new HashMap<>();
+        Map<Integer, Integer> mapDigitsFromComputer = new HashMap<>();
 
-        while(setDigitsFromComputer.size() != numberOfDigits){
+        while(mapDigitsFromComputer.size() != numberOfDigits){
             for (int i = 0; i < numberOfDigits; i++) {
-                setDigitsFromComputer.put(random.nextInt(10), i);
+                mapDigitsFromComputer.put(random.nextInt(10), i);
             }
         }
-            return setDigitsFromComputer.keySet().toArray(new Integer[0]);
+            return mapDigitsFromComputer.keySet().toArray(new Integer[0]);
     }
 
     // Check the digits from user and from computer are the same
@@ -129,7 +129,7 @@ public class App {
     // Selected message based on user digits and print results
     public static void printGameStatus(String message, int life){
 
-        if(message.equalsIgnoreCase("HOT HOT HOT")){
+        if(message.equals("HOT HOT HOT") || message.equals("HOT HOT HOT HOT") || message.equals("HOT HOT HOT HOT HOT")){
             System.out.println("***" + message + "***");
             System.out.println("Congratulations you win this game!");
             System.exit(0);
