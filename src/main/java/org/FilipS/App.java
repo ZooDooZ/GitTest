@@ -43,6 +43,14 @@ public class App {
 
         //Exercise 7 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
         //Exercise 8 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+        double number1 = getNumberFromUser();
+        String sign = getCalculationSign();
+        double number2 = getNumberFromUser();
+        double result = calculationResult(number1, sign, number2);
+        printResult(number1, sign, number2, result);
+
+
         //Exercise 9 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
         //Exercise 10 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
     }
@@ -158,6 +166,56 @@ public class App {
 
     //Exercise 7 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
     //Exercise 8 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+        public static double getNumberFromUser(){
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Enter your number: ");
+            return scanner.nextDouble();
+        }
+
+        public static String getCalculationSign(){
+            Scanner scanner = new Scanner(System.in);
+            String sign = "";
+            while(!(sign.equals("+") || sign.equals("-") || sign.equals("*") || sign.equals("/"))){
+                System.out.println("Choose calculation sign [+,-,*,/]: ");
+                sign = scanner.nextLine();
+            }
+            return sign;
+        }
+
+        public static double calculationResult(double number1, String sign, double number2) {
+            double result = 0;
+
+            if (number2 == 0 && sign.equals("/")) {
+                System.out.println("Error! You can't divine by 0!");
+                repeatAfterError();
+            } else if (sign.equals("+")) {
+                result =  number1 + number2;
+            } else if (sign.equals("-")) {
+                result = number1 - number2;
+            } else if (sign.equals("*")) {
+                result = number1 * number2;
+            } else {
+                result = number1 / number2;
+            }
+            return result;
+        }
+
+        public static void printResult(double number1, String sign, double number2, double result){
+
+            if (number2 == 0 && sign.equals("/")) {
+            } else {
+                System.out.println(number1 + " " + sign + " " + number2 + " = " + result);
+            }
+        }
+        public static void repeatAfterError(){
+            double number1 = getNumberFromUser();
+            String sign = getCalculationSign();
+            double number2 = getNumberFromUser();
+            double result = calculationResult(number1, sign, number2);
+            printResult(number1, sign, number2, result);
+        }
+
     //Exercise 9 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
     //Exercise 10 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
