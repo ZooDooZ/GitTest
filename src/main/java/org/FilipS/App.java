@@ -37,7 +37,10 @@ public class App {
 
         //Exercise 6 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
-        
+//        int numberFormUser = numberFromUser();
+//        double sumHarmonicSeries = calculateSumHarmonicSeries(numberFormUser);
+//        System.out.printf("Sum of harmonic series from user number %d is %.2f", numberFormUser, sumHarmonicSeries);
+
         //Exercise 7 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
         //Exercise 8 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
         //Exercise 9 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
@@ -134,6 +137,24 @@ public class App {
 
     //Exercise 6 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
+//        public static int numberFromUser(){
+//        Scanner scanner = new Scanner(System.in);
+//        int numberFromUser = -2;
+//        while(numberFromUser < 1) {
+//            System.out.println("Enter your number (only positive number):");
+//            numberFromUser = scanner.nextInt();
+//        }
+//        return numberFromUser;
+//    }
+//
+//        public static double calculateSumHarmonicSeries(int number){
+//            double sumHarmonicSeries = 1;
+//
+//            for(int i = 1; i < number; i++){
+//                sumHarmonicSeries += (1 /(double)(i+1));
+//            }
+//            return sumHarmonicSeries;
+//        }
 
     //Exercise 7 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
     //Exercise 8 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
