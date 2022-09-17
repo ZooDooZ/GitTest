@@ -1,2 +1,3 @@
 # GitTest
-Halo halo!
+Witaj na mojej stronie Gita ;)
+
