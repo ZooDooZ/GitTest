@@ -3,6 +3,7 @@ package org.FilipS;
 public class Exercise7 {
     public static void main(String[] args) {
 
+        // ZADANIE 1
 //        // Pusty kwadrat
 //        for(int i = 0; i < 6; i++){
 //            for(int j = 0; j < 5; j++) {
@@ -57,6 +58,17 @@ public class Exercise7 {
                 System.out.print("#");
             }
         }
+
+        // *Jak punkt 1, ale najpierw wprowadź wszystkie elementy do tablicy dwuwymiarowej, a dopiero później je wyświetl.
+        // *Kwadrat pusty w środku z jedną przekątną
+        // **Kwadrat pusty w środku z dwiema przekątnymi
+
+        // ZADANIE 2
+        //Posortowana tablica liczb całkowitych została obrócona nieznaną liczbę razy.
+        //Mając taką tablicę, znajdź indeks elementu w tablicy w czasie krótszym niż czas liniowy.
+        //Jeśli element nie istnieje w tablicy, zwróć -1.
+        //Na przykład, mając tablicę [13, 18, 25, 2, 8, 10] i element 8, zwróć 4 (indeks 8 w tablicy).
+
 
 
     }
