@@ -1,5 +1,8 @@
 package org.FilipS;
 
+
+import java.util.Arrays;
+
 public class Exercise7 {
     public static void main(String[] args) {
 
@@ -53,14 +56,23 @@ public class Exercise7 {
 //        }
 
         // *Trójkąt prostokątny.
-        for (int i = 0; i < 10; i++){
-            for(int j = 0; j < 10; j++){
-                System.out.print("#");
-            }
-        }
+//        for (int i = 0; i < 4; i++){
+//            for(int j = 0; j < i; j++){
+//                if(i == 2 && j == 1){
+//                    System.out.print("   ");
+//                    continue;
+//                }
+//                System.out.print("*  ");
+//            }
+//            System.out.println("* ");
+//        }
 
         // *Jak punkt 1, ale najpierw wprowadź wszystkie elementy do tablicy dwuwymiarowej, a dopiero później je wyświetl.
+
+
         // *Kwadrat pusty w środku z jedną przekątną
+
+
         // **Kwadrat pusty w środku z dwiema przekątnymi
 
         // ZADANIE 2
@@ -69,7 +81,49 @@ public class Exercise7 {
         //Jeśli element nie istnieje w tablicy, zwróć -1.
         //Na przykład, mając tablicę [13, 18, 25, 2, 8, 10] i element 8, zwróć 4 (indeks 8 w tablicy).
 
-
-
+//        int[] arrayNumbers = {13, 18, 25, 2, 8, 10};
+//        Arrays.sort(arrayNumbers);
+//
+//        int binarySearch = binarySearch(arrayNumbers, 8);
+//        System.out.println(binarySearch);
     }
+//    public static int binarySearch(int[] array, int value) {
+//        // Pierwszy element tablicy
+//        int first;
+//        // Ostatni element tablicy
+//        int last;
+//        // Punkt środkowy przeszukiwanego obszaru
+//        int middle;
+//        // Pozycja szukanej wartości
+//        int position;
+//        // Flaga
+//        boolean found;
+//
+//        first = 0;
+//        last = array.length-1;
+//        position = -1;
+//        found = false;
+//
+//        // Wyszukiwanie wartości
+//        while (!found && first <= last) {
+//
+//            // Obliczanie punktu środkowego
+//            middle = (first + last) / 2;
+//            // Jeśli wartość znaleziono w punkcie środkowym
+//            if (array[middle] == value) {
+//                found = true;
+//                position = middle;
+//            }
+//            // Jeśli wartość znajduje się w pierwszej połowie
+//            else if (array[middle] > value) {
+//                last = middle-1;
+//            }
+//            // Jeśli wartość znajduje się w drugiej połowie
+//            else
+//            first = middle + 1;
+//        }
+//        // Zwracanie pozycji elementu lub
+//        // jeśli wartości nie znaleziono to wypis -1
+//        return position;
+//    }
 }
