@@ -5,7 +5,6 @@ public class Exercise21 {
 
         //--------------- ZADANIA - POWTÓRKA ---------------
         //1. Napisz aplikację, która:
-        //
         //a) Będzie posiadała tablicę jednowymiarową składającą się z 3 elementów typu String: kombinerek, nożyczek i śrubokrętu.
         //b) Pobierze imię użytkownika.
         //c) Wypisze na ekran: „Witaj <imię>! W naszej ofercie mamy: ” + lista elementów z tablicy produktów zdefiniowanych w podpunkcie a,
