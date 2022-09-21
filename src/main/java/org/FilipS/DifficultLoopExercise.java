@@ -1,9 +1,7 @@
 package org.FilipS;
 
 
-import java.util.Arrays;
-
-public class Exercise7 {
+public class DifficultLoopExercise {
     public static void main(String[] args) {
 
         // ZADANIE 1
@@ -55,16 +53,17 @@ public class Exercise7 {
 //            }
 //        }
 
-        // *Trójkąt prostokątny.
-//        for (int i = 0; i < 4; i++){
-//            for(int j = 0; j < i; j++){
-//                if(i == 2 && j == 1){
-//                    System.out.print("   ");
-//                    continue;
+         //*Trójkąt prostokątny.
+//        int side = 6;
+//        for (int i = 1; i <= side; i++) {
+//            for (int j = 1; j <= side; j++) {
+//                if (i == j || i == side|| j == 1) {
+//                    System.out.print("* ");
+//                } else {
+//                    System.out.print("  ");
 //                }
-//                System.out.print("*  ");
 //            }
-//            System.out.println("* ");
+//            System.out.println();
 //        }
 
         // *Jak punkt 1, ale najpierw wprowadź wszystkie elementy do tablicy dwuwymiarowej, a dopiero później je wyświetl.
@@ -72,8 +71,40 @@ public class Exercise7 {
 
         // *Kwadrat pusty w środku z jedną przekątną
 
+//        int side = 4;
 
+//        for (int i = 1; i <= side; i++ ) {
+//            for (int j = 1 ; j <= side; j++ ) {
+//
+//                if (i == 1 || i == side || i == j ||
+//                        j == 1 || j == side) {
+//                    System.out.print("* ");
+//                }
+//                else {
+//                    System.out.print("  ");
+//                }
+//            }
+//            System.out.println();
+//        }
+//
+//        System.out.println();
         // **Kwadrat pusty w środku z dwiema przekątnymi
+
+//        int side1 = 6;
+//        for (int i = 1; i <= side1; i++ )
+//        {
+//            for (int j = 1 ; j <= side1; j++ )
+//            {
+//                if (i == 1 || i == side1 || i == j ||
+//                        j == 1 || j == side1 || j == side1 - i +1) {
+//                    System.out.print("* ");
+//                }
+//                else {
+//                    System.out.print("  ");
+//                }
+//            }
+//            System.out.println();
+//        }
 
         // ZADANIE 2
         //Posortowana tablica liczb całkowitych została obrócona nieznaną liczbę razy.
@@ -86,7 +117,7 @@ public class Exercise7 {
 //
 //        int binarySearch = binarySearch(arrayNumbers, 8);
 //        System.out.println(binarySearch);
-    }
+
 //    public static int binarySearch(int[] array, int value) {
 //        // Pierwszy element tablicy
 //        int first;
@@ -125,5 +156,5 @@ public class Exercise7 {
 //        // Zwracanie pozycji elementu lub
 //        // jeśli wartości nie znaleziono to wypis -1
 //        return position;
-//    }
+    }
 }
