@@ -2,7 +2,7 @@ package Exercise2;
 
 import java.util.Objects;
 
-public class Employee implements Workable {
+public class Employee {
 
     private int id;
     private String name;
@@ -12,6 +12,9 @@ public class Employee implements Workable {
     private Department department;
 
 
+    public Employee(){
+
+    }
     public Employee(int id, String name, String surname, String pesel, Address address, Department department) {
         this.id = id;
         this.name = name;
@@ -21,13 +24,6 @@ public class Employee implements Workable {
         this.department = department;
     }
 
-    public Employee() {
-    }
-
-    @Override
-    public boolean doWork() {
-        return false;
-    }
 
     public int getId() {
         return id;
